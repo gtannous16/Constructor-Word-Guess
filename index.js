@@ -13,8 +13,8 @@ let directions = "Guess which Coca Cola Product is the mystery word!"
 let direction = "Type in any letter to get started! You only have 10 guesses!"
 
 
-console.log("\x1b[37m","\x1b[41m","                                                                                                                                                            ")
-console.log("\x1b[37m","\x1b[41m","WELCOME TO THE WONDERFUL...                                                                                                                                 ")
+console.log("\n","\x1b[41m",                                                                                                                                                                    )
+console.log("\n","\n","\x1b[37m","\x1b[41m","WELCOME TO THE WONDERFUL...                                                                                                                                 ")
 console.log("\x1b[37m","\x1b[41m","                                                                                                         ***                                                ")
 console.log("\x1b[37m","\x1b[41m","     **            **                **     **             *****    *******           **   **  ******   *****                                               ")
 console.log("\x1b[37m","\x1b[41m","      **          ** ******  **,**   **     **    ******   **  *    **   **   ******  **  **   **  **    ***                                                ") 
@@ -22,11 +22,11 @@ console.log("\x1b[37m","\x1b[41m","       **   **   **  **  **  **  **  **  ****
 console.log("\x1b[37m","\x1b[41m","        **  **  **   **  **  **      **  *  **    **  **   **       **   **   **  **  **  **   **                                                           ")
 console.log("\x1b[37m","\x1b[41m","         **    **    ******  **      **  *****    ******   **       *******   ******  **    ** ******     *                                                 ")
 console.log("\x1b[41m","\x1b[41m","                                                                                                                                                            ")
-console.log("\n","\x1b[40m","                                                                                                                                                                  ")
-console.log("\x1b[37m","\x1b[40m",intro);
-console.log("\x1b[37m","\x1b[40m",directions);
-console.log("\x1b[37m","\x1b[40m",direction);
-
+console.log("\n","\x1b[40m"                                                                                                                                                                     )
+console.log("\n","\x1b[37m","\x1b[40m",intro);
+console.log("\n","\x1b[37m","\x1b[40m",directions);
+console.log("\n","\x1b[37m","\x1b[40m",direction);
+console.log("\n");
 
 
 wordGenerator();
@@ -60,7 +60,7 @@ function getGuess() {
 		let ltr = guess.letter.toUpperCase()
 
 		if (guessedLetters.includes(ltr)) {
-			console.log("\x1b[37m","You've already picked this letter, try another one!" + "\n")
+			console.log(chalk.white("You've already picked this letter, try another one!" + "\n"));
 		} else {
 
 			mysteryWord.guesser(ltr);
@@ -71,7 +71,7 @@ function getGuess() {
 			} else {
 				console.log(chalk.red("I'm sorry, wrong letter! Try Another one!" + "\n"))
 				guesses--;
-				console.log("\x1b[37m", "You have " + guesses + " guesses left!" + "\n");
+				console.log(chalk.white("You have " + guesses + " guesses left!" + "\n"));
 			}
 		}
 		winChecker();
@@ -84,7 +84,7 @@ function winChecker() {
 		console.log(chalk.red("You Got it!! The mystery Coke Product was: " + mysteryWord.word));
 		playAgain()
 	} else if (guesses > 0) {
-		console.log("\x1b[37m","You've guessed: " + guessedLetters.join(", ") + "\n")
+		console.log(chalk.red("You've guessed: " + guessedLetters.join(", ") + "\n"));
 		
 		getGuess();
 	} else {
