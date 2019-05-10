@@ -25,8 +25,8 @@ console.log("\x1b[41m","\x1b[41m","                                             
 console.log("\n","\x1b[40m"                                                                                                                                                                     )
 console.log("\n","\x1b[37m","\x1b[40m",intro);
 console.log("\n","\x1b[31m","\x1b[40m",directions);
-console.log("\n","\x1b[37m","\x1b[40m",direction);
-console.log("\n");
+console.log("\n","\x1b[37m","\x1b[40m",direction,);
+console.log("\n","\x1b[41m");
 
 
 wordGenerator();
