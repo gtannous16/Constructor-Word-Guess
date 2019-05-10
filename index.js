@@ -6,25 +6,25 @@ let guessedLetters = []
 let mysteryWord = {};
 let guesses = 10;
 let SodaArray = ['Coke Zero', 'Coca Cola', 'Diet Coke', 'Sprite', 
-'Vanilla Coke','Orange-Vanilla Coke','Pibb Xtra','Powerade','Cherry Coke',  
+'Vanilla Coke','Orange Vanilla Coke','PibbXtra','Powerade','Cherry Coke',  
 'Fanta','Minute Maid','VitaminWater'];
 let intro = "Welcome to the Coca Cola Brand Word Guess Game!"
-let directions = "Guess which Coca Cola Product is the mystery word!"
+let directions = "Guess which Coca Cola Product is the Mystery Word!"
 let direction = "Type in any letter to get started! You only have 10 guesses!"
 
 
 console.log("\n","\x1b[41m",                                                                                                                                                                    )
-console.log("\n","\n","\x1b[37m","\x1b[41m","WELCOME TO THE WONDERFUL...                                                                                                                                 ")
-console.log("\x1b[37m","\x1b[41m","                                                                                                         ***                                                ")
-console.log("\x1b[37m","\x1b[41m","     **            **                **     **             *****    *******           **   **  ******   *****                                               ")
-console.log("\x1b[37m","\x1b[41m","      **          ** ******  **,**   **     **    ******   **  *    **   **   ******  **  **   **  **    ***                                                ") 
-console.log("\x1b[37m","\x1b[41m","       **   **   **  **  **  **  **  **  *****    **  **  ****      **        **  **  ***      ******     *                                                 ")
-console.log("\x1b[37m","\x1b[41m","        **  **  **   **  **  **      **  *  **    **  **   **       **   **   **  **  **  **   **                                                           ")
-console.log("\x1b[37m","\x1b[41m","         **    **    ******  **      **  *****    ******   **       *******   ******  **    ** ******     *                                                 ")
+console.log("\n","\n","\x1b[37m","\x1b[41m","WELCOME TO THE WONDERFUL...                                                                                                                       ")
+console.log("\n","\x1b[37m","\x1b[41m","   **              **                                              *******                             ***                                            ")
+console.log("\x1b[37m","\x1b[41m","     **            **                **     **             *****    **   **          **   **  ******   *****                                               ")
+console.log("\x1b[37m","\x1b[41m","      **          ** ******  **,**   **     **    ******   **  *    **       ******  **  **   **  **    ***                                                ") 
+console.log("\x1b[37m","\x1b[41m","       **   **   **  **  **  **  **  **  *****    **  **  ****      **       **  **  ***      ******     *                                                 ")
+console.log("\x1b[37m","\x1b[41m","        **  **  **   **  **  **      **  *  **    **  **   **       **   **  **  **  **  **   **                                                           ")
+console.log("\x1b[37m","\x1b[41m","         **    **    ******  **      **  *****    ******   **       *******  ******  **    ** ******     *                                                 ")
 console.log("\x1b[41m","\x1b[41m","                                                                                                                                                            ")
 console.log("\n","\x1b[40m"                                                                                                                                                                     )
 console.log("\n","\x1b[37m","\x1b[40m",intro);
-console.log("\n","\x1b[37m","\x1b[40m",directions);
+console.log("\n","\x1b[31m","\x1b[40m",directions);
 console.log("\n","\x1b[37m","\x1b[40m",direction);
 console.log("\n");
 
@@ -35,8 +35,8 @@ function wordGenerator() {
 	let randomWord = SodaArray[Math.floor(Math.random() * SodaArray.length)];
 	mysteryWord = new Word(randomWord);
 	mysteryWord.splitLetters = randomWord.toUpperCase().split("");
-	mysteryWord.convert();
-	getGuess();
+    mysteryWord.convert();
+    getGuess();
 }
 
 

@@ -21,7 +21,7 @@ class Word {
             this.show.push(ltr.switcher());
         }
         
-        console.log(this.show.join(" ") + "\n")
+        console.log(this.show.join(" ") + "\n");
     }
 
 
