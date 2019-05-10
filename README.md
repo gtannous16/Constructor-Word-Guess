@@ -5,7 +5,7 @@ Welcome to the node World of Coke Products Word Game!
 * npm install chalk
 * npm install inquirer
 
-##Command to run this game 
+## Command to run this game 
 ### node index.js
 
 #### An Example of the guessing game!
