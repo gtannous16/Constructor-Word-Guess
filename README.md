@@ -9,3 +9,4 @@ Welcome to the node World of Coke Products Word Game!
 * node index.js
 
 #### An Example of the guessing game!
+![orangevanillacoke](https://media.giphy.com/media/5SCSu31TBZTyoNeJZ9/giphy.gif)

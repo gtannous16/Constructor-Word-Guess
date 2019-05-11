@@ -13,16 +13,16 @@ let directions = "Guess which Coca Cola Product is the Mystery Word!"
 let direction = "Type in any letter to get started! You only have 10 guesses!"
 
 
-console.log("\n","\x1b[41m",                                                                                                                                                                    )
-console.log("\n","\n","\x1b[37m","\x1b[41m","WELCOME TO THE WONDERFUL...                                                                                                                       ")
+console.log("\n","\x1b[41m"                                                                                                                                                                    )
+console.log("\n","\n","\x1b[37m","\x1b[41m","WELCOME TO THE WONDERFUL...                                                                                                                      ")
 console.log("\n","\x1b[37m","\x1b[41m","   **              **                                              *******                             ***                                            ")
 console.log("\x1b[37m","\x1b[41m","     **            **                **     **             *****    **   **          **   **  ******   *****                                               ")
 console.log("\x1b[37m","\x1b[41m","      **          ** ******  **,**   **     **    ******   **  *    **       ******  **  **   **  **    ***                                                ") 
 console.log("\x1b[37m","\x1b[41m","       **   **   **  **  **  **  **  **  *****    **  **  ****      **       **  **  ***      ******     *                                                 ")
 console.log("\x1b[37m","\x1b[41m","        **  **  **   **  **  **      **  *  **    **  **   **       **   **  **  **  **  **   **                                                           ")
 console.log("\x1b[37m","\x1b[41m","         **    **    ******  **      **  *****    ******   **       *******  ******  **    ** ******     *                                                 ")
-console.log("\x1b[41m","\x1b[41m","                                                                                                                                                            ")
-console.log("\n","\x1b[40m"                                                                                                                                                                     )
+console.log("\x1b[41m","                                                                                                                                                                      ")
+console.log("\n","\x1b[40m"                                                                                                                                                                    )
 console.log("\n","\x1b[37m","\x1b[40m",intro);
 console.log("\n","\x1b[31m","\x1b[40m",directions);
 console.log("\n","\x1b[37m","\x1b[40m",direction,);
