@@ -1,4 +1,4 @@
-# Constructor-Word-Guess
+# World Of Coke Constructor Game
 Welcome to the node World of Coke Products Word Game!
 
 ## Installations 
